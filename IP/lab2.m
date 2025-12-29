@@ -1,0 +1,18 @@
+clear all;
+close all;
+clc;
+pkg load image;
+img = imread("suii.jpg");
+subplot(1,2,1);
+figure
+imshow(img);
+grayscale_img = rgb2gray(img);
+figure
+imshow(grayscale_img);
+title("grayscale image");
+imwrite(grayscale_img, "original.jpg");
+output = 255-grayscale_img;
+figure
+imshow(uint8(output));
+title("output image");
+imwrite(unit8(output), "negative_kp");
