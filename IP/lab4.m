@@ -5,7 +5,7 @@ clc;        % clear command window
 % import image package
 pkg load image;
 % read image
-a=imread('Gokuu.jfif');
+a=imread('goku.jpg');
 subplot(2,2,1);
 imshow(a);
 title 'Original Image';
@@ -33,3 +33,4 @@ s3=uint8(sp2);
 subplot(2,2,4);
 imshow(s3);
 title 'Image 3';
+
